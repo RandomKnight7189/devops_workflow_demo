@@ -11,7 +11,7 @@ jobs:
       uses: docker/setup-buildx-action@v1
 
     - name: Build the Docker image
-      run: docker build . -t uday723/devops-lab:latest
+      run: docker build . -t kitohi/devops-lab:latest
       # Replace 'your-dockerhub-username' with your Docker Hub username
       working-directory: . # Replace this with the directory containing your Dockerfile
 
@@ -22,5 +22,5 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Push image to Docker Hub
-      run: docker push uday723/devops-lab:latest
+      run: docker push kitohi/devops-lab:latest
       # Replace 'your-dockerhub-username' with your Docker Hub username
